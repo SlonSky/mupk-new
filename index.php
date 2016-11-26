@@ -1,8 +1,12 @@
 <?php
 
-require_once('controller/router.php');
-require_once('controller/controller.php');
-require_once('controller/pages_controller.php');
+require_once('./controller/router.php');
+require_once('./controller/controller.php');
+require_once('./controller/pages_controller.php');
+
+require_once('./config/databases.php');
+
+require_once('./model/pages_model.php');
 
 $router = new Router(substr($_SERVER['REQUEST_URI'], 1));
 

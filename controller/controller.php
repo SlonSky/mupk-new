@@ -2,8 +2,6 @@
 
 class Controller {
 
-	protected $dataBase;
-
 	protected $action = 'index';
 	protected $name;
 	protected $content;

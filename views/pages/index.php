@@ -1,3 +1,4 @@
 
-<h3>Content</h3>
-<a href="/pages/secondPage">GOTO</a>
+<h1>Content</h1>
+<a href="./pages/secondPage">GOTO</a>
+<img src="./assets/img/profor1.jpg">
