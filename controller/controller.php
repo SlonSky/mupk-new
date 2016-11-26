@@ -30,10 +30,16 @@ class Controller {
 	}
 
 
-	public function render() {
+	public function render($header = null, $footer = null) {
 		ob_start(); 
 		{
+			if($header !== null) {
+				include_once($header);
+			}
 			include_once('/views/' . $this->name . '/' . $this->action . '.php');
+			if($footer !== null) {
+				include_once($footer);
+			}
 			$this->content = ob_get_contents();
 		}
 		ob_end_clean();

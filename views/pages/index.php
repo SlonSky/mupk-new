@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<h1>Index</h1>
 
-</body>
-</html>
+<h3>Content</h3>
+<a href="/pages/secondPage">GOTO</a>

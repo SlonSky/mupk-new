@@ -5,9 +5,11 @@ require_once('controller/controller.php');
 require_once('controller/pages_controller.php');
 
 $router = new Router(substr($_SERVER['REQUEST_URI'], 1));
-	$controller = $router->getController();
-	echo $controller->content();	
-	
+
+// todo: catch exceptions
+$controller = $router->getController();
+echo $controller->content();	
+
 // try {
 // 	$controller = $router->getController();
 // 	echo $controller->content();	
